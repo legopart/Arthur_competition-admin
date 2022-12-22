@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect, useCallback, forwardRef } from 'rea
 import { Alert as MuiAlert, Typography, Container, Button, TextField, Snackbar } from '@mui/material'; //Grid, Box, ButtonGroup, createTheme, ThemeProvider, colors, 
 import { DataGrid } from '@mui/x-data-grid';
 
-import { Axios } from '../api'
+import { Axios } from '../api/index1';
 
 export default function Admin() {
     const setHash = JSON.stringify((window.location.hash).substring(1));
