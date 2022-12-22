@@ -9,8 +9,8 @@ export default defineConfig({
       usePolling: true,
     },
     host: true, // needed for the Docker Container port mapping to work
-    strictPort: true,
-    port: 5173, // you can replace this port with any port
+    strictPort: false,
+
   },
   build: {
     chunkSizeWarningLimit: 4600,
