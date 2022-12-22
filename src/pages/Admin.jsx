@@ -136,6 +136,7 @@ export default function Admin() {
                 <DataGrid
                     rows={teamTaskListData}
                     columns={columns_TeamTaskList}
+                    sortModel={   { field: 'title', sort: 'asc', }}
                     getRowId={(row) => row._id}
                     disableSelectionOnClick
                     onCellEditCommit={handleRowEditCommit_Team_Task_List}
@@ -244,7 +245,7 @@ export default function Admin() {
         , { field: "task_id", headerName: "Task#", width: 80, description: "Task id" }
         , {
             field: "title", headerName: "Task Title", flex: 1, align: "left", description: "Task members list"
-            , sortable: false
+            , sortable: true
             , renderCell: (rowCell) => (
                 <div onClick={(p, e) => { }} style={{ color: "blue", fontSize: 18, width: "100%", textAlign: "left" }}> {rowCell.value} </div>)
             //, valueGetter: (params) => { return `${params.getValue(params.id, "image") || ""} ${ params.getValue(params.id, "title") || "" }`;}/
