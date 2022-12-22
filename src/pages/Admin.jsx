@@ -245,8 +245,7 @@ export default function Admin() {
         , { field: "task_id", headerName: "Task#", width: 80, description: "Task id" }
         , {
             field: "title", headerName: "Task Title", flex: 1, align: "left", description: "Task members list"
-            , renderCell: (rowCell) => (
-                <div onClick={(p, e) => { }} style={{ color: "blue", fontSize: 18, width: "100%", textAlign: "left" }}> {rowCell.value} </div>)
+
             //, valueGetter: (params) => { return `${params.getValue(params.id, "image") || ""} ${ params.getValue(params.id, "title") || "" }`;}/
         },
         { field: "mark", headerName: "Mark", width: 80, description: "Task id", editable: true, sortable: false }
